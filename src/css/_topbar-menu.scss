@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Thin'), local('Avenir-Next-Thin'),
+        url('../components/staff/fonts/AvenirNextCyr-Thin.woff2') format('woff2'),
+        url('../components/staff/fonts/AvenirNextCyr-Thin.woff') format('woff'),
+        url('../components/staff/fonts/AvenirNextCyr-Thin.ttf') format('truetype');
+  }
+
+.topbar-menu{
+    width: 100%;
+    margin: 20px 0;
+    
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        font-family: 'Avenir Next';
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .menu-item, .menu-item-active{
+        margin-left: 15px;
+        cursor: pointer;
+        transition: .4s;
+        padding-bottom: 8px;
+        position: relative;
+
+        &:hover{
+            color: #ccc;
+        }
+    }
+
+    .menu-item{
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: black;
+            transition: .6s;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
+    }
+
+    .menu-item-active{
+        border-bottom: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .topbar-menu{
+        display: none;
+    }
+}

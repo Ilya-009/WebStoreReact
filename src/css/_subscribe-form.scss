@@ -1,0 +1,77 @@
+.subscribe-form{
+    position: relative;
+    background-color: #ced3ca;
+    height: 500px;
+    padding: 10% 25%;
+    text-align: center;
+
+    .error-label, .error-label-active{
+        text-align: left;
+        padding-bottom: 5px;
+        color: red;
+        transition: .6s;
+    }
+    .error-label{
+        display: none;
+    }
+
+    .error-label-active{
+        display: block;
+    }
+    
+    .search-cont{
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        position: relative;
+
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            transition: 0.6s;
+            padding-left: 7px;
+            padding-right: 60px;
+            border-radius: 5px;
+            height: 45px;
+            font-size: 15pt;
+
+            &:hover, &:focus{
+                border-color: 2px solid #DF9A2B;
+                box-shadow: inset 0 0 0 2px #DF9A2B;
+            }
+        }
+
+        .search-btn-cont{
+            position: absolute;
+            width: 50px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            cursor: pointer;
+
+            img{
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+    .form-header{
+        font-size: 26pt;
+        margin-bottom: 17px;
+    }
+
+    .form-desc{
+        font-family: 'Avenir Next';
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+}

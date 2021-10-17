@@ -1,0 +1,61 @@
+.help-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+.page-sidebar {
+  width: 25%;
+}
+
+.page-content {
+  width: 75%;
+  border: 1px solid blue;
+}
+
+.page-content__header {
+  text-align: center;
+  margin: 0;
+}
+
+.sidebar-elem {
+  font-family: 'Avenir Next';
+  font-weight: 600;
+}
+
+.sidebar-elem__header {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.sidebar-elem-options {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.sidebar-elem .sidebar-elem__option {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-elem .sidebar-elem__option img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.sidebar-elem:not(:last-child) {
+  margin-bottom: 60px;
+}
+/*# sourceMappingURL=help-page.css.map */

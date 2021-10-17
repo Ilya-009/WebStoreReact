@@ -1,0 +1,30 @@
+// Imports
+// @import "_mobile.scss";
+
+//Default page styles
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.text-error{
+    color: red;
+}

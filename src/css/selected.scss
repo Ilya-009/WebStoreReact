@@ -1,0 +1,55 @@
+.selected-section{
+    position: relative;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+
+    .wrapper{
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+
+    .section-elem{
+        padding: 25px 0;
+        border-bottom: 1px solid #d3d1ce;
+    }
+
+    &__header{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    &-subtotal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .subtotal-header{
+            font-size: 22pt;
+        }
+        .subtotal-value{
+            font-size: 14pt;
+        }
+    }
+
+    &-actions{
+        display: flex;
+        justify-content: center;
+        
+        .checkout-btn{
+            font-size: 14pt;
+            padding: 15px 25px;
+            background-color: #1a1a1a;
+            color: #fff;
+            cursor: pointer;
+            transition: .6s;
+
+            &:hover{
+                background-color: #727171;
+            }
+        }
+    }
+}
+

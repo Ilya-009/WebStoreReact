@@ -1,0 +1,158 @@
+.cart {
+  display: none;
+}
+
+.cart-active {
+  display: block;
+}
+
+.cart-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.7);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.cart-cont {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 40%;
+  background-color: #fff;
+  font-family: 'Avenir Next';
+  font-size: 20px;
+  padding: 0 3%;
+  overflow: auto;
+}
+
+.cart__header {
+  text-align: center;
+}
+
+.cart-item {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item-info {
+  width: 80%;
+}
+
+.cart-item__name {
+  font-size: 16px;
+}
+
+.cart-item__image {
+  margin-right: 18px;
+}
+
+.cart-item__image img {
+  width: 60px;
+  height: 75px;
+}
+
+.cart-item-qty {
+  margin-top: 20px;
+}
+
+.cart-item-qty .qty-form {
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 30px;
+  width: 100px;
+  font-weight: 600;
+}
+
+.cart-item-qty .qty-form .btn-minus, .cart-item-qty .qty-form .btn-plus {
+  width: 25%;
+  font-size: 16pt;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cart-item-qty .qty-form .qty-input {
+  width: 50%;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  border-radius: 0;
+}
+
+.cart-item-price {
+  font-size: 14px;
+  text-align: right;
+}
+
+.checkout-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-prev .subtotal-value {
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.checkout-message {
+  text-align: center;
+  padding: 16px 0;
+  font-weight: 600;
+}
+
+.cart-checkout-btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .cart-cont {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cart-cont {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=cart.css.map */

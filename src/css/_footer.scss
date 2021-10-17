@@ -1,0 +1,70 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 80px 5%;
+    background-color: #F7F7F7;
+
+    &-navigation{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 75%;
+        
+        &__item{
+            // margin-right: 36px;
+            width: 30%;
+        }
+    }
+
+    &-brand{
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+
+        &__text{
+            width: auto;
+            margin-right: 2rem;
+            text-align: right;
+        }
+
+        &__social{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+    }
+}
+.navigation-header{
+    font-size: 14pt;
+    margin-bottom: 1.5rem;
+}
+
+.navigation-sub{
+    margin: 0;
+    padding-inline-start: 0;
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 14px;
+
+    &__item, &__item a{
+        margin-bottom: 1rem;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer{
+        display: block;
+    }
+    .footer-navigation{
+        width: 100%;
+    }
+    .footer-brand{
+        width: 100%;
+        &__text{
+            width: 80%;
+        }
+    }
+}

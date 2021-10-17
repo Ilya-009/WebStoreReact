@@ -1,0 +1,55 @@
+.help-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+.page-sidebar{
+    width: 25%;
+}
+
+.page-content{
+    width: 75%;
+    border: 1px solid blue;
+
+
+    &__header{
+        text-align: center;
+        margin: 0;
+    }
+    
+}
+
+.sidebar-elem{
+    font-family: 'Avenir Next';
+    font-weight: 600;
+
+    &__header{
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    &-options{
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .sidebar-elem__option{
+        cursor: pointer;
+            display: flex;
+            align-items: center;
+
+        img{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        // Here add one of hover effects
+    }
+}
+
+.sidebar-elem:not(:last-child){
+    margin-bottom: 60px;
+}
